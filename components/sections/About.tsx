@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { ChefHat, LightbulbIcon, CreditCard, Users } from "lucide-react"
+import Teams from "./Teams"
 
 const features = [
   {
@@ -7,11 +8,7 @@ const features = [
     title: "State-of-the-Art Test Kitchen",
     description: "Access to professional-grade equipment and resources to develop and refine culinary concepts."
   },
-  {
-    icon: <LightbulbIcon className="h-10 w-10 text-primary" />,
-    title: "Business Accelerator",
-    description: "Comprehensive training in business operations, marketing, and financial management."
-  },
+  
   {
     icon: <CreditCard className="h-10 w-10 text-primary" />,
     title: "Dedicated Funding Program",
@@ -85,6 +82,7 @@ export default function About() {
           ))}
         </div>
       </div>
+      <Teams />
     </section>
   )
 }
