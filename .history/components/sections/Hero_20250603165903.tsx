@@ -11,7 +11,7 @@ export default function Hero() {
       
       <div className="container mx-auto pt-20 z-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-          <span className="block">Chef  Program</span>
+          <span className="block">Chef Incubator Program</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10">
