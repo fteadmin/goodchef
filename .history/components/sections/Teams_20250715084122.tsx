@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: "Curtis Randolph",
     role: "CEO",
-    image: "/assets/team/cco.png",
+    image: "/assets/team/cco.jpg",
     description: "Visionary leader driving culinary innovation and business growth."
   },
   {
