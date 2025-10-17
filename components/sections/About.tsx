@@ -31,14 +31,27 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
-          <div className="flex flex-col justify-center">
-            <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-            <p className="text-muted-foreground mb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-center">
+          <div>
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">Our Vision & What We Offer</h3>
+            <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
               Our innovative dual-market solution combines a comprehensive chef incubator program with an exclusive membership-based dining community, creating unprecedented opportunities for culinary innovation and exceptional dining experiences.
             </p>
+            <div className="grid grid-cols-1 gap-4">
+              {features.map((feature, index) => (
+                <div key={index} className="flex gap-4 items-start p-4 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                  <div className="p-2 rounded-full bg-background shrink-0">
+                    {feature.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold mb-1">{feature.title}</h4>
+                    <p className="text-muted-foreground text-sm">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="rounded-lg overflow-hidden shadow-lg">
+          <div className="rounded-lg overflow-hidden shadow-xl">
             <img 
               src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
               alt="Chefs collaborating in kitchen" 
@@ -61,24 +74,6 @@ export default function About() {
               Welcome to The A List: Where Culinary Innovation Meets Dining Excellence. Good Chef Co's newest venture in downtown LA brings together emerging culinary talent and food enthusiasts. The A List serves as both an incubator for ambitious chefs and a hub for our culinary membership community.
             </p>
           </div>
-        </div>
-
-        <div className="text-center mb-12">
-          <h3 className="text-2xl font-bold mb-4">What We Offer</h3>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <Card key={index} className="border border-border bg-card">
-              <CardContent className="pt-6 flex flex-col items-center text-center">
-                <div className="mb-4 p-3 rounded-full bg-muted">
-                  {feature.icon}
-                </div>
-                <h4 className="text-xl font-bold mb-2">{feature.title}</h4>
-                <p className="text-muted-foreground">{feature.description}</p>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </div>
     </section>
