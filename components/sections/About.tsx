@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { ChefHat, LightbulbIcon, CreditCard, Users } from "lucide-react"
-import Teams from "./Teams"
 
 const features = [
   {
@@ -23,7 +22,7 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about\" className="py-24 px-4 bg-background">
+    <section id="about" className="py-24 px-4 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Good Chef Co</h2>
@@ -82,7 +81,6 @@ export default function About() {
           ))}
         </div>
       </div>
-      <Teams />
     </section>
   )
 }
