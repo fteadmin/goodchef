@@ -10,13 +10,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-10"></div>
       
       <div className="container mx-auto pt-20 z-10">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-          <span className="block mb-2">Beyond The Plate:</span>
-          <span className="block text-3xl md:text-5xl lg:text-6xl mb-3">Discover the Culinary Artistry</span>
-          <span className="block text-3xl md:text-5xl lg:text-6xl">of Good Chef Co.</span>
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+          <span className="block">Chef Program</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mt-8 mb-10">
+        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10">
           We are transforming passionate chefs into successful entrepreneurs through our elite business accelerator, state-of-the-art test kitchen, dedicated funding program, and a membership dining experience.
         </p>
         
