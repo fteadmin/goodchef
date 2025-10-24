@@ -15,14 +15,13 @@ export default function Hero() {
           loop
           playsInline
           preload="auto"
-          poster="/assets/events/beyondplate.jpg"
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        {/* subtle overlay to ensure text remains readable over the video */}
-        <div className="absolute inset-0 bg-black/30 z-10" aria-hidden />
+        {/* overlay to ensure text remains readable over the video */}
+        <div className="absolute inset-0 bg-black/40" aria-hidden />
       </div>
 
-  <div className="container mx-auto pt-20 z-20">
+      <div className="container mx-auto pt-20 relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
           <span className="block">Chef Program</span>
         </h1>
