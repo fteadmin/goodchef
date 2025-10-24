@@ -7,9 +7,22 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center text-center py-24 px-4 bg-gradient-to-b from-background to-card"
     >
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-10"></div>
-      
-      <div className="container mx-auto pt-20 z-10">
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          src="/assets/landing.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster="/assets/events/beyondplate.jpg"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        {/* subtle overlay to ensure text remains readable over the video */}
+        <div className="absolute inset-0 bg-black/30 z-10" aria-hidden />
+      </div>
+
+  <div className="container mx-auto pt-20 z-20">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
           <span className="block">Chef Program</span>
         </h1>
