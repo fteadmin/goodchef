@@ -65,13 +65,13 @@ export default function Contact() {
           <div>
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
             <p className="text-muted-foreground mb-8">
-              Fill out the form and our team will get back to you within 24 hours. We're excited to hear from both aspiring chefs and dining enthusiasts.
+              Fill out the form and our team will get back to you within 24 hours. We are excited to hear from both aspiring chefs and dining enthusiasts.
             </p>
             
             <div className="bg-card p-6 rounded-lg shadow-md">
               <div className="mb-6">
                 <h4 className="font-bold mb-2">Address</h4>
-                <p className="text-muted-foreground">Downtown LA, Los Angeles, CA</p>
+                <p className="text-muted-foreground">1401 21st ST Studio R, Sacramento, CA 95811, US</p>
               </div>
               
               <div className="mb-6">
@@ -81,7 +81,7 @@ export default function Contact() {
               
               <div>
                 <h4 className="font-bold mb-2">Phone</h4>
-                <p className="text-muted-foreground">(123) 456-7890</p>
+                <p className="text-muted-foreground">(818) 651-7779</p>
               </div>
             </div>
           </div>

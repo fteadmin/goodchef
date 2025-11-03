@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import ThemeToggle from "@/components/ui/ThemeToggle"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -42,11 +43,15 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link
-          href="#home"
-          className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
-        >
-          Good Chef Co
+        <Link href="#home" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <Image
+            src="/assets/logos/GoodChefFullLogo_Transparent_NoBuffer_Hannah May.png"
+            alt="Good Chef Co"
+            width={180}
+            height={64}
+            className="object-contain h-10 w-auto"
+          />
+          <span className="hidden md:inline text-lg font-semibold tracking-tight">Good Chef Co</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
