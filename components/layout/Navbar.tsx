@@ -8,12 +8,13 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Chefs", href: "#chefs" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/#about" },
+  { name: "Services", href: "/#services" },
+  { name: "Chefs", href: "/#chefs" },
   { name: "Events", href: "/events" },
-  { name: "Contact", href: "#contact" },
+  { name: "Membership", href: "/membership" },
+  { name: "Contact", href: "/#contact" },
 ]
 
 export default function Navbar() {
@@ -43,7 +44,7 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="#home" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+  <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <Image
             src="/assets/logos/GoodChefFullLogo_Transparent_NoBuffer_Hannah May.png"
             alt="Good Chef Co"
