@@ -12,7 +12,7 @@ export default function Footer() {
               Transforming passionate chefs into successful entrepreneurs through our elite business accelerator.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-primary transition-colors">
+              <Link href="https://www.instagram.com/goodchefco/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </Link>
