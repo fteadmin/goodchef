@@ -12,19 +12,19 @@ export default function Footer() {
               Transforming passionate chefs into successful entrepreneurs through our elite business accelerator.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://www.instagram.com/goodchefco/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+              <Link href="https://www.instagram.com/goodchefco/" target="_blank" rel="noreferrer" className="hover:text-secondary transition-colors p-2 rounded-full hover:bg-secondary/10">
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
+              <Link href="#" className="hover:text-secondary transition-colors p-2 rounded-full hover:bg-secondary/10">
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
+              <Link href="#" className="hover:text-secondary transition-colors p-2 rounded-full hover:bg-secondary/10">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="hover:text-primary transition-colors">
+              <Link href="#" className="hover:text-secondary transition-colors p-2 rounded-full hover:bg-secondary/10">
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -35,22 +35,26 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#home" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="#home" className="text-muted-foreground hover:text-secondary transition-colors flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-secondary group-hover:w-2 transition-all duration-300"></span>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="#about" className="text-muted-foreground hover:text-secondary transition-colors flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-secondary group-hover:w-2 transition-all duration-300"></span>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#chefs" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="#chefs" className="text-muted-foreground hover:text-secondary transition-colors flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-secondary group-hover:w-2 transition-all duration-300"></span>
                   Chefs
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="#contact" className="text-muted-foreground hover:text-secondary transition-colors flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-secondary group-hover:w-2 transition-all duration-300"></span>
                   Contact
                 </Link>
               </li>
@@ -61,15 +65,15 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
+                <MapPin size={20} className="mr-2 mt-1 flex-shrink-0 text-secondary" />
                 <span className="text-muted-foreground">1401 21st ST Studio R, Sacramento, CA 95811, US</span>
               </li>
               <li className="flex items-center">
-                <Phone size={20} className="mr-2 flex-shrink-0" />
+                <Phone size={20} className="mr-2 flex-shrink-0 text-secondary" />
                 <span className="text-muted-foreground">(818) 651-7779</span>
               </li>
               <li className="flex items-center">
-                <Mail size={20} className="mr-2 flex-shrink-0" />
+                <Mail size={20} className="mr-2 flex-shrink-0 text-secondary" />
                 <span className="text-muted-foreground">info@goodchefco.com</span>
               </li>
             </ul>

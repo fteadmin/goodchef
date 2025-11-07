@@ -11,7 +11,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/#about" },
   { name: "Services", href: "/#services" },
-  { name: "Chefs", href: "/#chefs" },
+  { name: "Chefs", href: "/chefs" },
   { name: "Events", href: "/events" },
   { name: "Membership", href: "/membership" },
   { name: "Contact", href: "/#contact" },
@@ -37,10 +37,10 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
         scrolled
-          ? "bg-background/95 backdrop-blur-sm shadow-md py-2"
-          : "bg-transparent py-4"
+          ? "bg-background/95 backdrop-blur-sm shadow-md py-2 border-secondary/20"
+          : "bg-transparent py-4 border-transparent"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -60,9 +60,10 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium hover:text-primary transition-colors duration-200"
+              className="text-sm font-medium hover:text-secondary transition-colors duration-200 relative group"
             >
               {link.name}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300"></span>
             </Link>
           ))}
           <ThemeToggle />
@@ -93,7 +94,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-lg font-medium py-2 hover:text-primary transition-colors duration-200"
+              className="text-lg font-medium py-2 hover:text-secondary transition-colors duration-200 border-l-2 border-transparent hover:border-secondary pl-2"
             >
               {link.name}
             </Link>
