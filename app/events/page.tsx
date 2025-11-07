@@ -30,21 +30,22 @@ export default function EventsPage() {
             title="Beyond the Plate"
             description="An immersive dining experience that explores the stories, techniques, and inspirations behind signature dishes. Engage with our chefs and discover the culinary journey beyond what's on your plate."
             image="/assets/events/beyondplate.jpg"
-            location="Downtown LA"
+            location="Long Beach, CA"
+            date="November 21st"
             badgeText="Featured Event"
           />
           <EventCard 
             title="Maa Harvest"
             description="A soul-nourishing ritual uniting communities through farm-to-table authenticity. This seasonal, chef-led experience features curated menus from local regenerative farms and indigenous growers, celebrating holistic living and conscious consumption while rebuilding our connection to the land and each other."
             image="/assets/events/maaharvest3.jpg"
-            location="Urban Farm Collective"
+            location="TBD"
             badgeText="Seasonal"
           />
           <EventCard 
             title="A-list Supper Club"
             description="An exclusive membership dining experience featuring rotating chef residencies. Each intimate dinner features innovative tasting menus from our incubator's rising culinary talents in a sophisticated setting."
             image="/assets/events/alistsupper.jpg"
-            location="The A-List Venue"
+            location="TBD"
             badgeText="Members Only"
           />
         </div>
