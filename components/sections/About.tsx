@@ -61,7 +61,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <div className="order-2 md:order-1 rounded-lg overflow-hidden shadow-lg">
             <img 
               src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
@@ -75,7 +75,7 @@ export default function About() {
               Welcome to The A List: Where Culinary Innovation Meets Dining Excellence. Good Chef Co's newest venture in downtown LA brings together emerging culinary talent and food enthusiasts. The A List serves as both an incubator for ambitious chefs and a hub for our culinary membership community.
             </p>
           </div>
-        </div>
+        </div> */}
         
         {/* <Stats /> */}
       </div>
