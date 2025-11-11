@@ -32,7 +32,7 @@ export default function EventCard({ title, description, image, location, badgeTe
         <CardTitle className="text-xl lg:text-2xl">{title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        {(date || location) && (
+        {(date || (location && location !== "TBD")) && (
           <div className="space-y-2 mb-4">
             {date && (
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -40,7 +40,7 @@ export default function EventCard({ title, description, image, location, badgeTe
                 <span>{date}</span>
               </div>
             )}
-            {location && (
+            {location && location !== "TBD" && (
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-secondary" />
                 <span>{location}</span>

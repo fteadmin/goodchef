@@ -18,7 +18,7 @@ export default function EventsPage() {
             <ChevronLeft className="h-4 w-4 mr-1" />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Upcoming Events</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Events</h1>
           <p className="text-muted-foreground max-w-3xl">
             Experience exceptional culinary moments with Good Chef Co&apos;s signature event series. 
             Join us for unique dining experiences, chef collaborations, and food celebrations.
