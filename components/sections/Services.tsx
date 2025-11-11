@@ -27,7 +27,7 @@ const services = [
       "State-of-the-art test kitchen — Generates immediate revenue through innovative dining experiences",
       "Dedicated funding program — Provides capital needed to scale"
     ],
-    image: "https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg",
+    image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     altText: "Chef incubator program"
   }
 ];

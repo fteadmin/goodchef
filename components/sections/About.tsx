@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { ChefHat, LightbulbIcon, CreditCard, Users } from "lucide-react"
-import Stats from "./Stats"
+// import Stats from "./Stats"
 
 const features = [
   {
@@ -77,7 +77,7 @@ export default function About() {
           </div>
         </div>
         
-        <Stats />
+        {/* <Stats /> */}
       </div>
     </section>
   )
