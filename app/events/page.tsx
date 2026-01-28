@@ -27,14 +27,27 @@ export default function EventsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           <EventCard 
+            title="Valentine's Day & Black History Month Dinner Party"
+            description="Join us for an unforgettable evening celebrating black excellence, black success, and black love in an indigenous context. Experience a Moroccan-style dinner setup on the beach with lush cushions, blankets, and low tables."
+            image="/assets/events/val.png"
+            location="Long Beach"
+            date="February 14th (Saturday)"
+            time="4:30 PM"
+            ticketPrice="$125"
+            attire="We encourage colorful and creative attire to match the cultural theme. We will be on the beach sitting on cushions, so please keep that in mind when planning your attire."
+            theme="Cultural theme incorporating 'black excellence and black success' and 'black love' (indigenous context); Moroccan-style dinner setup with lush cushions, blankets & low tables."
+            paymentLink="https://751e3102-2fdb-41f7-bf0a-209cb1a5fdc9.paylinks.godaddy.com/6faabd15-bbd9-439a-b3dc-99b"
+            badgeText="Featured Event"
+          />
+          <EventCard 
             title="Beyond the Plate"
             description="An immersive dining experience that explores the stories, techniques, and inspirations behind signature dishes. Engage with our chefs and discover the culinary journey beyond what's on your plate."
             image="/assets/events/beyondplate.jpg"
             location="Long Beach, CA"
             date="November 21st"
-            badgeText="Featured Event"
+            badgeText="Past Event"
           />
-          <EventCard 
+          {/* <EventCard 
             title="Maa Harvest"
             description="A soul-nourishing ritual uniting communities through farm-to-table authenticity. This seasonal, chef-led experience features curated menus from local regenerative farms and indigenous growers, celebrating holistic living and conscious consumption while rebuilding our connection to the land and each other."
             image="/assets/events/maaharvest3.jpg"
@@ -47,7 +60,7 @@ export default function EventsPage() {
             image="/assets/events/alistsupper.jpg"
             location="TBD"
             badgeText="Members Only"
-          />
+          /> */}
         </div>
 
         <div className="mt-16 text-center">
